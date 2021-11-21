@@ -18,6 +18,7 @@ class IndexController
 //        p('你好');
         $config = new config();
         p($config->get('controller', 'route'));
+        p($config->get('action', 'route'));
         p($config->all('route'));
         p(\bootstrap\core\config::$cache);
         $memberModel = new MemberModel();

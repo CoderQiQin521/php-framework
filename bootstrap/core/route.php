@@ -26,19 +26,19 @@ class route
                 $this->action = $pathArr[1];
                 unset($pathArr[1]);
             } else {
-                $this->action = 'index';
+                $this->action = config::get('action', 'route');
             }
-            $count = count($pathArr)+2;
+            $count = count($pathArr) + 2;
             $i = 2;
             while ($i < $count) {
-                if (isset($pathArr[$i+1])) {
-                    $_GET[$pathArr[$i]] = $pathArr[$i+1];
+                if (isset($pathArr[$i + 1])) {
+                    $_GET[$pathArr[$i]] = $pathArr[$i + 1];
                 }
-                $i = $i+2;
+                $i = $i + 2;
             }
         } else {
-            $this->controller = 'index';
-            $this->action = 'index';
+            $this->controller = config::get('controller', 'route');
+            $this->action = config::get('action', 'route');
         }
         
     }

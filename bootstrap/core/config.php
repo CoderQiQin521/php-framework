@@ -23,7 +23,7 @@ class config
                 if (isset($config[$name])) {
                     self::$cache[$fileName] = $config;
                     return $config[$name];
-                }else {
+                } else {
                     throw new \Exception('没有这个配置项' . $name);
                 }
             } else {
@@ -41,7 +41,7 @@ class config
             if (is_file($file)) {
                 $config = include $file;
                 self::$cache[$fileName] = $config;
-                return $config[$fileName];
+                return $config;
             } else {
                 throw new \Exception('配置文件不存在' . $file);
             }

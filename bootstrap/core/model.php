@@ -12,12 +12,11 @@ class model extends \PDO
 {
     public function __construct()
     {
-        $dsn = 'mysql:host=localhost;dbname=test';
-        $username = 'root';
-        $password = 'root';
+        $config = config::all('database');
+        $dsn = "{$config['driver']}:host={$config['host']}:{$config['port']};dbname={$config['dbname']}";
         try {
-            parent::__construct($dsn,$username, $password);
-        }catch (\PDOException $e) {
+            parent::__construct($dsn, $config['username'], $config['password']);
+        } catch (\PDOException $e) {
             throw $e;
         }
     }
