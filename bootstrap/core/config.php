@@ -14,7 +14,7 @@ class config
     
     public static function get($name, $fileName)
     {
-        if (self::$cache[$fileName]) {
+        if (isset(self::$cache[$fileName])) {
             return self::$cache[$fileName][$name];
         } else {
             $file = CONFIG . '/' . $fileName . '.php';
@@ -34,7 +34,7 @@ class config
     
     public static function all($fileName)
     {
-        if (self::$cache[$fileName]) {
+        if (isset(self::$cache[$fileName])) {
             return self::$cache[$fileName];
         } else {
             $file = CONFIG . '/' . $fileName . '.php';
