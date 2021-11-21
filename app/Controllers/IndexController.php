@@ -9,12 +9,17 @@
 namespace app\Controllers;
 
 use app\Models\MemberModel;
+use bootstrap\core\config;
 
 class IndexController
 {
     public function index()
     {
 //        p('你好');
+        $config = new config();
+        p($config->get('controller', 'route'));
+        p($config->all('route'));
+        p(\bootstrap\core\config::$cache);
         $memberModel = new MemberModel();
         p($memberModel->list());
     }
