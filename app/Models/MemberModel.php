@@ -12,6 +12,7 @@ use bootstrap\core\model;
 
 class MemberModel extends model
 {
+    protected $table = 'members';
     public function list()
     {
 //        $sql = 'select * from members';
@@ -19,6 +20,6 @@ class MemberModel extends model
 //        //        dd($res->rowCount());
 //        return $res->fetchAll();
         
-        return $this->select('members', ['id','realname','gender','mobile','money','balance','created_at','updated_at']);
+        return $this->select($this->table, ['id','realname','gender','mobile','money','balance','created_at','updated_at']);
     }
 }
