@@ -1,0 +1,18 @@
+{
+    "name": "administrator/mytest",
+    "autoload": {
+        "psr-4": {
+            "Administrator\\Mytest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CoderQiQin521",
+            "email": "coderqiqin@aliyun.com"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.14",
+        "symfony/var-dumper": "^5.3"
+    }
+}
