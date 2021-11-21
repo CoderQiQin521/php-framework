@@ -33,7 +33,6 @@ class App
         $controller = $route->controller;
         $controller = ucfirst($controller);
         $action = $route->action;
-        // TODO: 没有处理大驼峰
         $controllerFile = APP . '/Controllers/' . $controller . 'Controller.php';
         $controllerClass = '\app\Controllers\\' . $controller . 'Controller';
         if (is_file($controllerFile)) {
