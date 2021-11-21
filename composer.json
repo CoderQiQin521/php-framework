@@ -1,5 +1,5 @@
 {
-  "name": "CoderQiQin/php-framework",
+  "name": "coderqiqin/phpframework",
   "keywords": [
     "framework",
     "php"
@@ -17,6 +17,7 @@
   ],
   "require": {
     "filp/whoops": "^2.14",
-    "symfony/var-dumper": "^5.3"
+    "symfony/var-dumper": "^5.3",
+    "monolog/monolog": "^2.3"
   }
 }

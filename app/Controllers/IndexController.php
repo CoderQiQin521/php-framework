@@ -11,6 +11,8 @@ namespace app\Controllers;
 use app\Models\MemberModel;
 use bootstrap\core\config;
 use bootstrap\core\controller;
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
 
 class IndexController extends controller
 {
@@ -31,6 +33,10 @@ class IndexController extends controller
 //        p($config->get('action', 'route'));
 //        p($config->all('route'));
 //        p(\bootstrap\core\config::$cache);
+        $log = new Logger('name');
+        $log->pushHandler(new StreamHandler('log/'.date('Y-m-d').'.log', Logger::WARNING));
+        $log->warning('ip: '. $_SERVER['REMOTE_ADDR'] . '-' . 'method: ' . $_SERVER['REQUEST_METHOD'] . '-' . 'uri: ' . $_SERVER['REQUEST_URI']);
+        
         $memberModel = new MemberModel();
         p($memberModel->list());
     }
