@@ -38,6 +38,7 @@ class IndexController extends controller
         $log->warning('ip: '. $_SERVER['REMOTE_ADDR'] . '-' . 'method: ' . $_SERVER['REQUEST_METHOD'] . '-' . 'uri: ' . $_SERVER['REQUEST_URI']);
         
         $memberModel = new MemberModel();
-        p($memberModel->list());
+//        p($memberModel->list());
+        returnJson($memberModel->list());
     }
 }
