@@ -17,7 +17,9 @@ class IndexController extends controller
     public function index()
     {
         $data = [
-            'title' => 'PHP framework'
+            'title' => 'PHP framework',
+            'cn' => '一款轻量的php框架, 仅作者学习使用, 请勿使用在生产环境',
+            'en' => 'A lightweight PHP framework, only the author can learn to use, do not use it in the production environment'
         ];
         $this->view('index.html', ['data' => $data]);
     }
