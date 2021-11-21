@@ -2,6 +2,7 @@
 
 namespace bootstrap;
 //use bootstrap\route;
+use bootstrap\core\config;
 
 /**
  *
@@ -15,8 +16,22 @@ class App
     
     public static function run()
     {
+        $appConfig = config::all('app');
+        // 设置系统时区
+        date_default_timezone_set($appConfig['timezone']);
+        if ($appConfig['debug']){
+            $whoops = new \Whoops\Run;
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            $whoops->register();
+        
+            ini_set('display_errors', 'On');
+        }else {
+            ini_set('display_errors', 'Off');
+        }
+        
         $route = new \bootstrap\core\route();
         $controller = $route->controller;
+        $controller = ucfirst($controller);
         $action = $route->action;
         // TODO: 没有处理大驼峰
         $controllerFile = APP . '/Controllers/' . $controller . 'Controller.php';
