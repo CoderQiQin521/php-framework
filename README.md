@@ -1,4 +1,6 @@
-## 安装
+打开浏览器访问: http://phpframework.makebasis.com/
+
+## 📦 安装
 ```apacheconf
 git clone https://github.com/CoderQiQin521/php-framework.git
 ```
@@ -6,7 +8,7 @@ git clone https://github.com/CoderQiQin521/php-framework.git
 composer install
 ```
 
-## 部署
+## ⌨️ 部署
 - 运行目录修改为public
 - 修改config/database
 - 配置伪静态, 参考以下
