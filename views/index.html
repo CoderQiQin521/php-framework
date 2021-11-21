@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            color: unset;
+            text-decoration: none;
+        }
+        #app {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cn {
+            color: #555;
+        }
+        .en {
+            margin-top: 20px;
+            color: #303030;
+        }
+        .link {
+            margin-top: 30px;
+            color: #f08d49;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1><?php echo $data['title']; ?></h1>
+        <div class="cn">一款轻量的php框架, 仅作者学习使用, 请勿使用在生产环境</div>
+        <div class="en">
+            A lightweight PHP framework, only the author can learn to use, do not use it in the production environment
+        </div>
+        <a class="link" href="https://github.com/CoderQiQin521/php-framework">欢迎您的start</a>
+    </div>
+</body>
+</html>
