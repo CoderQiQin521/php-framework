@@ -1,4 +1,4 @@
-打开浏览器访问: http://phpframework.makebasis.com/
+使用此框架搭建的演示站,打开浏览器访问: http://phpframework.makebasis.com/
 
 ## 📦 安装
 ```apacheconf
