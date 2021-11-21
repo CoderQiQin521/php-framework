@@ -17,8 +17,10 @@ class view
 //            extract($data);
 //            include $file;
             $loader = new \Twig\Loader\FilesystemLoader(BASE . '/views');
-            $twig = new \Twig\Environment($loader);
-            
+            $cache = PUBLICPATH . config::get('cache', 'view');
+            $twig = new \Twig\Environment($loader, [
+                'cache' => $cache
+            ]);
             echo $twig->render($template, $data);
         } else {
             throw new \Exception('模版不存在' . $template);

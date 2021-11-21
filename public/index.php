@@ -8,6 +8,7 @@
 define('START', microtime(true));
 defined('BASE') or define('BASE', realpath('../'));
 defined('APP') or define('APP', BASE.'/app');
+defined('PUBLICPATH') or define('PUBLICPATH', BASE.'/public');
 defined('CONFIG') or define('CONFIG', BASE.'/config');
 defined('BOOTSTRAP') or define('BOOTSTRAP', BASE.'/bootstrap');
 
