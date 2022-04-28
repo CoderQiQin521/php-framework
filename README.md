@@ -29,3 +29,4 @@ location / {
 	try_files $uri $uri/ /index.php$is_args$query_string;  
 }  
 ```
+
