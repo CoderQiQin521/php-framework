@@ -30,3 +30,4 @@ location / {
 }  
 ```
 
+欢迎star
