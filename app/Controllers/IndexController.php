@@ -33,6 +33,7 @@ class IndexController extends controller
 //        p($config->get('action', 'route'));
 //        p($config->all('route'));
 //        p(\bootstrap\core\config::$cache);
+        // 123
         $log = new Logger('name');
         $log->pushHandler(new StreamHandler('log/'.date('Y-m-d').'.log', Logger::WARNING));
         $log->warning('ip: '. $_SERVER['REMOTE_ADDR'] . '-' . 'method: ' . $_SERVER['REQUEST_METHOD'] . '-' . 'uri: ' . $_SERVER['REQUEST_URI']);
