@@ -7,5 +7,6 @@
  **/
 return [
     'debug' => true,
-    'timezone' => 'PRC'
+    'timezone' => 'PRC',
+    'locale' => 'zh-CN',
 ];
