@@ -1,5 +1,7 @@
 使用此框架搭建的演示站,打开浏览器访问: http://phpframework.makebasis.com/
 
+Open the browser to access the demo station built with this framework: http://phpframework.makebasis.com/
+
 ## 📦 Install
 ```apacheconf
 git clone https://github.com/CoderQiQin521/php-framework.git
@@ -29,5 +31,3 @@ location / {
 	try_files $uri $uri/ /index.php$is_args$query_string;  
 }  
 ```
-
-欢迎star
