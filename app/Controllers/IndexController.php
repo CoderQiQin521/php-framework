@@ -33,6 +33,7 @@ class IndexController extends controller
 //        p($config->get('action', 'route'));
 //        p($config->all('route'));
 //        p(\bootstrap\core\config::$cache);
+//        p($config->get('driver', 'log'));
         // 123
         $log = new Logger('name');
         $log->pushHandler(new StreamHandler('log/'.date('Y-m-d').'.log', Logger::WARNING));
