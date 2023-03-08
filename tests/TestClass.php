@@ -9,4 +9,9 @@ class TestClass extends TestCase {
         $B = 20;
         $this->assertEquals(30, $a + $B);
     }
+
+    public function testPrint() {
+        print_r(['code']);
+        $this->assertTrue(true);
+    }
 }
