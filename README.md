@@ -31,3 +31,6 @@ location / {
 	try_files $uri $uri/ /index.php$is_args$query_string;  
 }  
 ```
+![img](http://phpframework.makebasis.com/img/jb_beam.png)
+
+Thanks for JetBrains support
