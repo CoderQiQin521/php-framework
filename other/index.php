@@ -42,5 +42,13 @@ foreach($attributes as $attribute) {
   $attribute->newInstance(); //获取注解实例的时候，会输出 ‘打印字符串 Hello world’
 }
 
-
+$res = match($name) {
+    'a' => 'aaaa',
+    'b' => 'bbbbb',
+    'c','d' => (function() {
+        return 'cdcdcdcd';
+    })(),
+    default => 'none'
+};
+print_r($res. "\n");
 print_r(2023);
