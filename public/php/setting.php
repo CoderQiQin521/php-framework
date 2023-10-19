@@ -102,10 +102,6 @@ class SDEngine extends BaseEngine
                    ->setProgress(0)
                    ->setDelay(1)
                    ->push();
-        # 传统异步队列
-        //        $this->queueService->push($message_id, [
-        //            'task_id' => $message_id
-        //        ], 0, 1);
         return [
             'message_id' => $message_id
         ];
