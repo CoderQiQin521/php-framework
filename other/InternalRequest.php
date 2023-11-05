@@ -43,4 +43,8 @@ class InternalRequest implements InternalRequestContract
         $param['sign']       = SignatureService::createSignature($param);
         return $param;
     }
+
+    public function hello() {
+        return "hello";
+    }
 }
