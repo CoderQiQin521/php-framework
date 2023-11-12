@@ -2,3 +2,6 @@
 //# sourceMappingURL=react-code-view-33a3d3b514d3.js.map
 
 console.log(1234567)
+
+const arr = [1,2,3,4];
+console.log(arr[1])
