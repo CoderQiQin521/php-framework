@@ -110,3 +110,7 @@ print_r(2023);
 print_r($res. "\n");
 print_r(2023);print_r($res. "\n");
 print_r(2023);
+
+
+echo "hello";
+array_map();
