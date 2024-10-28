@@ -8,6 +8,7 @@ console.log(arr[1])
 
 function hello() {
 }
+ckChunk=globalThis.webpackChunk||[]).push([["react-code-view"],{10089:(e,r,o)=>{var t,_=o(77083),s=o(79953),a=o(85893),d=o(34232),n=o(3276
 console.log(1234567)
 
 const arr = [1,2,3,4];
