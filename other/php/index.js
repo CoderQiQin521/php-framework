@@ -16,6 +16,11 @@ console.log(arr[1])
 
 function hello() {
 }
+                                                                                const arr = [1,2,3,4];
+console.log(arr[1])
+
+function hello() {
+}
 console.log(1234567)
 
 console.log(1234567)
