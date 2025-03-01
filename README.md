@@ -2,6 +2,15 @@
 
 Open the browser to access the demo station built with this framework: http://phpframework.makebasis.com/
 
+## Database support
+The framework supports databases using PHP_POD as the underlying driver. It can connect to MySQL, MSSQL, Oracle, SQLite, PostgreSQL, and Sybase, and also supports configuring multiple database connections.
+
+## Controller
+The framework adopts object-oriented programming (OOP) to access and call member functions, making it easy to create actions to handle transactions, all running under a namespace.
+
+## Template parsing
+The framework comes with a built-in HTML template parsing engine to meet the needs of program development.
+
 ## 📦 Install
 ```apacheconf
 git clone https://github.com/CoderQiQin521/php-framework.git
