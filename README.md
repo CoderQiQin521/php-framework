@@ -42,4 +42,5 @@ location / {
 ```
 ![img](http://phpframework.makebasis.com/img/jb_beam.png)
 
-Thanks for JetBrains support
+
+Thank you to JetBrains for supporting open-source projects.
