@@ -110,7 +110,16 @@ print_r(2023);
 print_r($res. "\n");
 print_r(2023);print_r($res. "\n");
 print_r(2023);
-
+$name = 'd';
+$res = match($name) {
+    'a' => 'aaaa',
+    'b' => 'bbbbb',
+    'c','d' => (function() {
+        return 'cdcdcdcd';
+    })(),
+    default => 'none'
+};
+print_r($res. "\n");
 
 echo "hello";
 array_map();
